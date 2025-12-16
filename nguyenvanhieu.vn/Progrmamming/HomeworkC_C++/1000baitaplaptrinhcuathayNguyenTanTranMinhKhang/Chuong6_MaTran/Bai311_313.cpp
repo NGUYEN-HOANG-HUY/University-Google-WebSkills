@@ -1,49 +1,52 @@
-//
-// Created by ASUS on 12/8/2025.
-//
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-void NhapMaTran(int a[][100], int &m, int &n) {
-    cout << "Nhap so dong (m): ";
-    cin >> m;
-    cout << "Nhap so cot (n): ";
-    cin >> n;
+#define MAX 1000
 
-    cout << "Nhap cac phan tu cua ma tran:\n";
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            cout << "a[" << i << "][" << j << "] = ";
+void Nhap(int &n, int &m) {
+    do {
+        cout << "Nhap so dong n: ";
+        cin >> n;
+
+        cout << "Nhap so cot m: ";
+        cin >> m;
+
+        if (n < 1 || n > MAX || m < 1 || m > MAX) {
+            cout << "Khong hop le! Nhap lai.\n";
+        }
+
+    } while (n < 1 || n > MAX || m < 1 || m > MAX);
+}
+
+void nhapMang(vector<vector<long long>> &a, int n, int m) {
+    a.resize(n, vector<long long>(m));
+    cout << "Nhap mang:\n";
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             cin >> a[i][j];
         }
     }
 }
 
-void XuatMaTran(int a[][100], int m, int n) {
-    cout << "\nMa tran vua nhap:\n";
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
+void xuatMang(const vector<vector<long long>> &a, int n, int m) {
+    cout << "Mang vua nhap:\n";
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             cout << a[i][j] << " ";
         }
         cout << endl;
     }
 }
 
-#include <iostream>
-using namespace std;
-
-#define MAX 100
-
-void NhapMaTran(int a[][MAX], int &m, int &n);
-void XuatMaTran(int a[][MAX], int m, int n);
-
 int main() {
-    int a[MAX][MAX];
-    int m, n;
+    int n, m;
+    vector<vector<long long>> a;
 
-    NhapMaTran(a, m, n);
-    XuatMaTran(a, m, n);
+    Nhap(n, m);
+    nhapMang(a, n, m);
+    xuatMang(a, n, m);
 
     return 0;
 }

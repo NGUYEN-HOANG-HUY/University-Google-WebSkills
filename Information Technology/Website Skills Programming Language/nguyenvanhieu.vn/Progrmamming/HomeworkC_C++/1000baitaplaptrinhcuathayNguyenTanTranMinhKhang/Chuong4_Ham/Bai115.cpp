@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
-#include <limits> // for numeric_limit<
+#include <limits>
+#include <fstream>
 
 using namespace std;
 
@@ -8,72 +9,150 @@ struct STUDENT {
     string FullName;
     float Math;
     float Literature;
-    float Calculate; // diem trung binh
+    float Average;
 };
 
-// Nhập thông tin 1 học sinh (theo tham chiếu)
+// ===== Nhập 1 học sinh =====
 void GetInformation(STUDENT &s) {
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // tránh lỗi khi gọi sau cin >>
-    cout << "Nhap Ho va Ten cua hoc sinh: \n";
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    cout << "Nhap ho ten: ";
     getline(cin, s.FullName);
 
-    cout << "Nhap diem mon Toan: ";
-    while (!(cin >> s.Math)) { // kiểm tra nhập hợp lệ
-        cout << "Nhap sai. Vui long nhap lai diem Toan: ";
+    cout << "Nhap diem Toan: ";
+    while (!(cin >> s.Math)) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Nhap lai diem Toan: ";
     }
 
-    cout << "Nhap diem mon Van: ";
+    cout << "Nhap diem Van: ";
     while (!(cin >> s.Literature)) {
-        cout << "Nhap sai. Vui long nhap lai diem Van: ";
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Nhap lai diem Van: ";
     }
 
-    // tính điểm trung bình
-    s.Calculate = (s.Math + s.Literature) / 2.0f;
+    s.Average = (s.Math + s.Literature) / 2;
 }
 
-// Nhập danh sách n học sinh
-void GetList(STUDENT a[], int &n) {
-    cout << "Nhap so luong hoc sinh: ";
-    while (!(cin >> n) || n < 0) {
-        cout << "Nhap sai. Vui long nhap so nguyen >= 0: ";
-        cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    }
-
-    for (int i = 0; i < n; ++i) {
-        cout << "\n--- Hoc sinh thu " << (i + 1) << " ---\n";
-        GetInformation(a[i]);
-    }
-}
-
-// In thông tin 1 học sinh
+// ===== In 1 học sinh =====
 void OutInformation(const STUDENT &s) {
-    cout << "Ho va ten       : " << s.FullName << '\n';
-    cout << "Diem Toan       : " << s.Math << '\n';
-    cout << "Diem Van        : " << s.Literature << '\n';
-    cout << "Diem trung binh : " << s.Calculate << '\n';
+    cout << "Ho ten: " << s.FullName << endl;
+    cout << "Toan  : " << s.Math << endl;
+    cout << "Van   : " << s.Literature << endl;
+    cout << "TB    : " << s.Average << endl;
 }
 
-// In danh sách
-void OutList(STUDENT a[], int n) {
-    cout << "\n====== DANH SACH HOC SINH ======\n";
-    for (int i = 0; i < n; ++i) {
-        cout << "\n-- Hoc sinh thu " << (i + 1) << " --\n";
+// ===== Thêm học sinh =====
+void AddStudent(STUDENT a[], int &n, int max) {
+    if (n >= max) {
+        cout << "Danh sach day!\n";
+        return;
+    }
+    cout << "\n--- THEM HOC SINH ---\n";
+    GetInformation(a[n]);
+    n++;
+    cout << "Them thanh cong!\n";
+}
+
+// ===== Hiển thị danh sách =====
+void ShowList(STUDENT a[], int n) {
+    if (n == 0) {
+        cout << "Danh sach rong!\n";
+        return;
+    }
+    for (int i = 0; i < n; i++) {
+        cout << "\nHoc sinh " << i + 1 << endl;
         OutInformation(a[i]);
     }
 }
 
+// ===== Xóa học sinh theo tên =====
+void DeleteStudent(STUDENT a[], int &n) {
+    if (n == 0) {
+        cout << "Danh sach rong!\n";
+        return;
+    }
+
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    string name;
+    cout << "Nhap ten hoc sinh can xoa: ";
+    getline(cin, name);
+
+    for (int i = 0; i < n; i++) {
+        if (a[i].FullName == name) {
+            for (int j = i; j < n - 1; j++) {
+                a[j] = a[j + 1];
+            }
+            n--;
+            cout << "Da xoa hoc sinh!\n";
+            return;
+        }
+    }
+    cout << "Khong tim thay hoc sinh!\n";
+}
+
+// ===== Lưu file =====
+void SaveToFile(STUDENT a[], int n) {
+    ofstream file("students.txt");
+    if (!file) {
+        cout << "Khong mo duoc file!\n";
+        return;
+    }
+
+    for (int i = 0; i < n; i++) {
+        file << a[i].FullName << ","
+             << a[i].Math << ","
+             << a[i].Literature << ","
+             << a[i].Average << endl;
+    }
+
+    file.close();
+    cout << "Da luu vao file students.txt\n";
+}
+
+// ===== MENU =====
+void Menu() {
+    cout << "\n===== MENU =====\n";
+    cout << "1. Them hoc sinh\n";
+    cout << "2. Xoa hoc sinh\n";
+    cout << "3. Hien thi danh sach\n";
+    cout << "4. Luu vao file\n";
+    cout << "0. Thoat\n";
+    cout << "Chon: ";
+}
+
 int main() {
-    const int MAX = 1000;
+    const int MAX = 100;
     STUDENT a[MAX];
     int n = 0;
+    int choice;
 
-    GetList(a, n);
-    OutList(a, n);
+    do {
+        Menu();
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                AddStudent(a, n, MAX);
+                break;
+            case 2:
+                DeleteStudent(a, n);
+                break;
+            case 3:
+                ShowList(a, n);
+                break;
+            case 4:
+                SaveToFile(a, n);
+                break;
+            case 0:
+                cout << "Thoat chuong trinh!\n";
+                break;
+            default:
+                cout << "Lua chon sai!\n";
+        }
+    } while (choice != 0);
 
     return 0;
 }

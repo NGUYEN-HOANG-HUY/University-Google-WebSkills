@@ -14,4 +14,12 @@ add_executable(Programming_Language
         FullHouse/FullHouseC43/Programming/HomeworkC_Cplusplus/HelloWorld.cpp
         FullHouse/FullHouseC43/Programming/HomeworkC_Cplusplus/HelloWorld.cpp
         "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai1.cpp"
-        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai1.cpp")
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai1.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/test.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai2.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai3.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai4.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai5.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong2_LapTrinhNgonNguC_Cplusplus/Bai77.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong2_LapTrinhNgonNguC_Cplusplus/Bai78.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong2_LapTrinhNgonNguC_Cplusplus/Bai79.cpp")

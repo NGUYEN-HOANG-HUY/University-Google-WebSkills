@@ -1,0 +1,18 @@
+# Build files
+*.exe
+*.o
+*.out
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+
+# Temporary
+*.log
+
+# Windows
+Thumbs.db

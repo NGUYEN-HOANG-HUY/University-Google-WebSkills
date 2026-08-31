@@ -1,18 +1,33 @@
 #include <iostream>
+#include <iomanip>
+#include <cmath>
 
 using namespace std;
+
+void nhap(int &n) {
+    cin >> n;
+}   
+
+int tinhTong(int n) {
+    int s = 0;
+    for (int i = 1; i <= n; i++) {
+        s += i;
+    }
+    return s;
+}
+
+void `xuat(int s) {
+    cout << s << endl;
+}
 
 int main() {
     int t;
     cin >> t;
-    for (int i = 0; i < t; i++) {
+    while (t--) {
         int n;
-        cin >> n;
-        int s = 0;
-        for (int i = 1; i <= n; i++) {
-            s += i;
-        }
-        cout << s << endl;
+        nhap(n);
+        int s = tinhTong(n);
+        xuat(s);
     }
     return 0;
 }

@@ -3,6 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
@@ -22,10 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888c2f8f-60e6-423f-811a-164b15f5de65" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai12.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong4_Ham/Bai115.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong4_Ham/Bai115.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong5_MangMotChieu/KyThuatDatLinhCɑnh_CacBaiTapCoBan/Bai134.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong5_MangMotChieu/KyThuatDatLinhCɑnh_CacBaiTapCoBan/Bai134.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong5_MangMotChieu/KyThuatDatLinhCɑnh_CacBaiTapCoBan/Bai134.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong5_MangMotChieu/KyThuatDatLinhCɑnh_CacBaiTapCoBan/Bai134.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +69,7 @@
   "keyToString": {
     "C/C++ File.Bai1.cpp.executor": "Run",
     "C/C++ File.Bai115.cpp.executor": "Run",
+    "C/C++ File.Bai12.cpp.executor": "Run",
     "C/C++ File.Bai134.cpp.executor": "Run",
     "C/C++ File.Bai2.cpp.executor": "Run",
     "C/C++ File.Bai3.cpp.executor": "Run",
@@ -96,10 +101,10 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="C/C++ File.Bai134.cpp">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+  <component name="RunManager" selected="C/C++ File.Bai12.cpp">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="Bai115.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="University-Google-WebSkills" TARGET_NAME="Bai115.cpp" CONFIG_NAME="Bai115.cpp">
@@ -108,14 +113,14 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bai134.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="University-Google-WebSkills" TARGET_NAME="Bai134.cpp" CONFIG_NAME="Bai134.cpp">
-      <option name="sourceFile" value="Information Technology\Website Skills Programming Language\nguyenvanhieu.vn\Progrmamming\HomeworkC_C++\1000baitaplaptrinhcuathayNguyenTanTranMinhKhang\Chuong5_MangMotChieu\KyThuatDatLinhCɑnh_CacBaiTapCoBan\Bai134.cpp" />
+    <configuration name="Bai12.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="University-Google-WebSkills" TARGET_NAME="Bai12.cpp" CONFIG_NAME="Bai12.cpp">
+      <option name="sourceFile" value="Information Technology\Website Skills Programming Language\nguyenvanhieu.vn\Progrmamming\HomeworkC_C++\1000baitaplaptrinhcuathayNguyenTanTranMinhKhang\Chuong1_LuuDoThuatToan\Bai12.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bai78.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="University-Google-WebSkills" TARGET_NAME="Bai78.cpp" CONFIG_NAME="Bai78.cpp">
-      <option name="sourceFile" value="Information Technology\Website Skills Programming Language\nguyenvanhieu.vn\Progrmamming\HomeworkC_C++\1000baitaplaptrinhcuathayNguyenTanTranMinhKhang\Chuong2_LapTrinhNgonNguC_Cplusplus\Bai78.cpp" />
+    <configuration name="Bai134.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="University-Google-WebSkills" TARGET_NAME="Bai134.cpp" CONFIG_NAME="Bai134.cpp">
+      <option name="sourceFile" value="Information Technology\Website Skills Programming Language\nguyenvanhieu.vn\Progrmamming\HomeworkC_C++\1000baitaplaptrinhcuathayNguyenTanTranMinhKhang\Chuong5_MangMotChieu\KyThuatDatLinhCɑnh_CacBaiTapCoBan\Bai134.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -134,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.Bai12.cpp" />
         <item itemvalue="C/C++ File.Bai134.cpp" />
         <item itemvalue="C/C++ File.test.cpp" />
         <item itemvalue="C/C++ File.Bai115.cpp" />
         <item itemvalue="C/C++ File.Bai79.cpp" />
-        <item itemvalue="C/C++ File.Bai78.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +158,7 @@
       <workItem from="1766499126592" duration="9000" />
       <workItem from="1766499148628" duration="5911000" />
       <workItem from="1766766477862" duration="4743000" />
+      <workItem from="1788859484558" duration="1593000" />
     </task>
     <servers />
   </component>

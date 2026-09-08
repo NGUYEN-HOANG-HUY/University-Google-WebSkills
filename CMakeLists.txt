@@ -22,4 +22,5 @@ add_executable(Programming_Language
         "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai5.cpp"
         "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong2_LapTrinhNgonNguC_Cplusplus/Bai77.cpp"
         "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong2_LapTrinhNgonNguC_Cplusplus/Bai78.cpp"
-        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong2_LapTrinhNgonNguC_Cplusplus/Bai79.cpp")
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong2_LapTrinhNgonNguC_Cplusplus/Bai79.cpp"
+        "Information Technology/Website Skills Programming Language/nguyenvanhieu.vn/Progrmamming/HomeworkC_C++/1000baitaplaptrinhcuathayNguyenTanTranMinhKhang/Chuong1_LuuDoThuatToan/Bai12.cpp")

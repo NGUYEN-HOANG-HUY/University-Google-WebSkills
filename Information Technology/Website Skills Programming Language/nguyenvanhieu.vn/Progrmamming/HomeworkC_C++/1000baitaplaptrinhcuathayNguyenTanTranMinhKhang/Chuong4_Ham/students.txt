@@ -1,1 +1,2 @@
-Nguyen Van A,9.5,7.5,8.5
+Nguyen Van A,7.5,8.5,8
+Nguyen Van B,7.8,8.7,8.25

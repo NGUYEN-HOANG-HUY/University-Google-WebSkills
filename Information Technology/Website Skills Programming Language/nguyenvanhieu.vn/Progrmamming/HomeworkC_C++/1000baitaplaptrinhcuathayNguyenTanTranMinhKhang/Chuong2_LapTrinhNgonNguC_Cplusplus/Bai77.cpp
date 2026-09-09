@@ -10,7 +10,7 @@ void Sum(int n) {
     for (int i = 1; i <= n; i++) {
         s += i;
     }
-    cout << s << endl;
+    return s;
 }
 
 

@@ -5,23 +5,13 @@
 
 using namespace std;
 
-void LietKeUocSoNguyenDuong(int n) {
-    if (n <= 0) {
-        cout << "Khong hop le, xin vui long nhap lai!";
-        return;
-    }
-    cout << n << endl;
-    LietKeUocSoNguyenDuong(n - 1);
-}
-
-
-int main () {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        LietKeUocSoNguyenDuong(n);
+int main() {
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            cout << i << " ";
+        }
     }
     return 0;
 }

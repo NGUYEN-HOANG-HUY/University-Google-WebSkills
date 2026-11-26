@@ -2,25 +2,26 @@
 
 using namespace std;
 
-void nhapName(string &name) {
-    cin >> name;
+bool isPrime(int n) {
+	if (n < 2) return false;
+	for (int i = 2; i * i <= n; i++) {
+		if (n % i == 0) return false;
+	}
+	return true;
 }
 
 int main() {
-    int t;
-    cin >> t;
-    while (t>0) {
-        string name;
-        nhapName(name);
-        cout << "Hello " + string(name);
-        cout << endl;
-        t -= 1;
-    }
-    return 0;
+	int t;
+	cin >> t;
+	while (t--) {
+		int n;
+		cin >> n;
+		for (int i = 2; i <= n; i++) {
+			if (isPrime(i)) {
+				cout << i << " ";
+			}
+		}
+		cout << endl;
+	}
+	return 0;
 }
-
-
-
-
-
-
